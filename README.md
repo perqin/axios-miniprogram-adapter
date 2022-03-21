@@ -1,10 +1,12 @@
 [![license](https://img.shields.io/npm/l/axios-miniprogram-adapter.svg)](https://github.com/bigmeow/axios-miniprogram-adapter/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/bigmeow/axios-miniprogram-adapter.svg?branch=master)](https://travis-ci.org/bigMeow/axios-miniprogram-adapter)
-<a href="https://www.npmjs.com/package/axios-miniprogram-adapter"><img src="https://img.shields.io/npm/v/axios-miniprogram-adapter.svg" alt="Version"></a>
-[![NPM downloads](http://img.shields.io/npm/dm/axios-miniprogram-adapter.svg?style=flat-square)](http://www.npmtrends.com/axios-miniprogram-adapter)
+<a href="https://www.npmjs.com/package/@perqin/axios-miniprogram-adapter"><img src="https://img.shields.io/npm/v/@perqin/axios-miniprogram-adapter.svg" alt="Version"></a>
+[![NPM downloads](http://img.shields.io/npm/dm/@perqin/axios-miniprogram-adapter.svg?style=flat-square)](http://www.npmtrends.com/@perqin/axios-miniprogram-adapter)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/bigMeow/axios-miniprogram-adapter.svg)](http://isitmaintained.com/project/bigMeow/axios-miniprogram-adapter "Percentage of issues still open")
 
 axios的小程序适配器，支持在各个平台小程序中使用axios
+
+**由于上游已经一年没有更新，本仓库会发布到@perqin/axios-miniprogram-adapter，解决依赖问题。**
 
 ## :star: 特性
 
@@ -70,7 +72,7 @@ $ npm i axios axios-miniprogram-adapter
 
 ```js
 import axios from 'axios'
-import mpAdapter from 'axios-miniprogram-adapter'
+import mpAdapter from '@perqin/axios-miniprogram-adapter'
 axios.defaults.adapter = mpAdapter
 ```
 
@@ -82,14 +84,14 @@ $ npm init
 ```
 - 安装
 ``` base
-$ npm i axios axios-miniprogram-adapter
+$ npm i axios @perqin/axios-miniprogram-adapter
 ```
 - 在小程序开发者工具中依次找到并点击`工具`->`构建npm`，构建完成后你的项目目录会多出一个`miniprogram_npm`目录
 
 - 代码引入使用
 ```js
 import axios from 'axios'
-import mpAdapter from 'axios-miniprogram-adapter'
+import mpAdapter from '@perqin/axios-miniprogram-adapter'
 axios.defaults.adapter = mpAdapter
 ```
 
