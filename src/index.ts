@@ -19,7 +19,7 @@ export default function mpAdapter (config: AxiosRequestConfig) :AxiosPromise {
   return new Promise((resolve, reject) => {
     let requestTask: void | WechatMiniprogram.RequestTask
     let requestData = config.data
-    let requestHeaders = config.headers
+    let requestHeaders = config.headers || {}
     // baidu miniprogram only support upperCase
     let requestMethod = (config.method && config.method.toUpperCase()) || 'GET'
     // miniprogram network request config
